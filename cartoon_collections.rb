@@ -38,8 +38,8 @@ def find_the_cheese(array)
 end
 
 
-def find_the_cheese2(array, array1)
-  cheese_types = array1
+def find_the_cheese2(array, array_1)
+  cheese_types = array_1
     array.find do |type|
     cheese_types.include?(type)
 end
