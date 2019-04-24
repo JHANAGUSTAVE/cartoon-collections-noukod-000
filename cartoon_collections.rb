@@ -18,14 +18,13 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  n_array =[]
-  i = 0 
-  while i < array.length 
-  if n_array << array[i] > 4
-    true 
+  i = 0
+  if  array.any? {|long| long.length > 4}
+    return true
   else
-    false
-  end
+    return false
+  i += 1
+end
   
 end
 
